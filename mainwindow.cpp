@@ -55,7 +55,7 @@ void MainWindow::setupDynamicData(QCustomPlot *customPlot)
 
     valueAxis->setRange(0, 10);
     valueAxis->setPadding(35);             // 轴的内边距，可以到QCustomPlot之开始（一）看图解
-    valueAxis->setLabel("Height");
+    valueAxis->setLabel("Height/cm");
     valueAxis->setUpperEnding(QCPLineEnding::esSpikeArrow);
 
     QVector<double> datay;
