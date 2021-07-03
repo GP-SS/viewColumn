@@ -18,7 +18,8 @@ void MainWindow::setupDynamicData(QCustomPlot *customPlot)
 {
     QCPAxis *keyAxis = customPlot->xAxis;
     QCPAxis *valueAxis = customPlot->yAxis;
-    QCPBars *height = new QCPBars(keyAxis, valueAxis);  // 使用xAxis作为柱状图的key轴，yAxis作为value轴
+    //QCPBars *height = new QCPBars(keyAxis, valueAxis);  // 使用xAxis作为柱状图的key轴，yAxis作为value轴
+    CustomBars *height = new CustomBars(keyAxis, valueAxis);
 
     height->setAntialiased(false); // 为了更好的边框效果，关闭抗齿锯
     height->setName("控制棒高度"); // 设置柱状图的名字，可在图例中显示
@@ -73,7 +74,7 @@ void MainWindow::setupDynamicData(QCustomPlot *customPlot)
 void MainWindow::dynamicDataSlot()
 {
 
-    QCPBars *bar = static_cast<QCPBars *>(ui->customPlot->plottable(0));
+    CustomBars *bar = static_cast<CustomBars *>(ui->customPlot->plottable(0));
     bar->data()->clear();
 
     QVector<double> datay;
