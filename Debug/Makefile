@@ -239,6 +239,7 @@ Makefile: ../viewColumn.pro D:/Software/Qt5/5.12.11/mingw73_64/mkspecs/win32-g++
 		D:/Software/Qt5/5.12.11/mingw73_64/lib/Qt5PrintSupport.prl \
 		D:/Software/Qt5/5.12.11/mingw73_64/lib/Qt5Widgets.prl \
 		D:/Software/Qt5/5.12.11/mingw73_64/lib/Qt5Gui.prl \
+		D:/Software/Qt5/5.12.11/mingw73_64/lib/Qt5Network.prl \
 		D:/Software/Qt5/5.12.11/mingw73_64/lib/Qt5Core.prl \
 		D:/Software/Qt5/5.12.11/mingw73_64/lib/qtmain.prl
 	$(QMAKE) -o Makefile ..\viewColumn.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
@@ -418,6 +419,7 @@ D:/Software/Qt5/5.12.11/mingw73_64/mkspecs/features/lex.prf:
 D:/Software/Qt5/5.12.11/mingw73_64/lib/Qt5PrintSupport.prl:
 D:/Software/Qt5/5.12.11/mingw73_64/lib/Qt5Widgets.prl:
 D:/Software/Qt5/5.12.11/mingw73_64/lib/Qt5Gui.prl:
+D:/Software/Qt5/5.12.11/mingw73_64/lib/Qt5Network.prl:
 D:/Software/Qt5/5.12.11/mingw73_64/lib/Qt5Core.prl:
 D:/Software/Qt5/5.12.11/mingw73_64/lib/qtmain.prl:
 qmake: FORCE

@@ -1,5 +1,7 @@
 QT       += core gui
 
+QT += network #网络通信必备
+
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
 
 CONFIG += c++11
